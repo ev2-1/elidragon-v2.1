@@ -1,0 +1,15 @@
+[submodule "games/mt_game"]
+	path = games/mt_game
+	url = https://github.com/minetest/minetest_game
+[submodule "minetest"]
+	path = minetest
+	url = https://github.com/ev2-1/minetest-5.4.1-docker
+[submodule "minetest_instancer"]
+	path = minetest_instancer
+	url = https://github.com/ev2-1/minetest_instancer
+[submodule "multiserver/proxy"]
+	path = multiserver/proxy
+	url = https://github.com/ev2-1/mt-multiserver-proxy
+[submodule "multiserver/plugins/chatcommands"]
+	path = multiserver/plugins/chatcommands
+	url = https://github.com/HimbeerserverDE/mt-multiserver-chatcommands

@@ -1,0 +1,9 @@
+auth/*
+games/*
+!games/.gitkeep
+
+config/*
+!config/conf
+
+worlds/*
+!worlds/.gitkeep

@@ -1,0 +1,24 @@
+# mt-multiserver-proxy-docker
+
+docker container based on mt-multiserver-proxy@ev2-1-dev
+
+THIS DOSNT USE HIMBEERS REPO!
+
+- Uses golang 1.17.9 on debian strech
+
+## Ports:
+
+- `40000/udp` - listend minetest
+- `40010/tcp` - telnet controll interface
+
+## Plugins:
+
+- clone into `plugins/` folde
+
+## Config:
+
+- `./config.json`
+
+## Volumes:
+
+- `/go/proxy/cmd/mt-multiserver-proxy/auth` - auth folder where authentication data (hashes & salts) are saved
