@@ -16,6 +16,8 @@ well idk....
 
 - `git submodule update--init`
 
+- plugin preperation: `./prep_plugin.sh`
+
 - do the jank configuration (see configuration.md)
 
 - build minetest image (takes a while) `./build_minetest_image.sh`
