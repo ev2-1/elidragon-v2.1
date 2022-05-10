@@ -14,7 +14,7 @@ well idk....
 
 ### how to start:
 
-- `git submodule update--init`
+- `git submodule update --init`
 
 - plugin preperation: `./prep_plugin.sh`
 
