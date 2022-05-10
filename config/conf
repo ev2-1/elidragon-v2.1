@@ -1,0 +1,6 @@
+# example configuration file
+# DO NOT USE THIS OUTSIDE OF TESTING!!1!
+secure.trusted_mods = ev2_1,http_signs,adv_signs
+secure.http_mods = ussigns,adv_signs,multiserver_signs,reporter
+secure.enable_security = false
+default_privs = interact,shout,fly,fast,weather_manager,privs,fly,settime
