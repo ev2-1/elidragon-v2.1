@@ -7,12 +7,12 @@
 [submodule "minetest_instancer"]
 	path = minetest_instancer
 	url = https://github.com/ev2-1/minetest_instancer
-[submodule "multiserver/proxy"]
-	path = multiserver/proxy
-	url = https://github.com/ev2-1/mt-multiserver-proxy
 [submodule "multiserver/plugins/chatcommands"]
 	path = multiserver/plugins/chatcommands
 	url = https://github.com/HimbeerserverDE/mt-multiserver-chatcommands
 [submodule "multiserver/plugins/chatcommands-plus"]
 	path = multiserver/plugins/chatcommands-plus
 	url = https://github.com/ev2-1/mt-multiserver-chatcommands-plus
+[submodule "multiserver/proxy"]
+	path = multiserver/proxy
+	url = https://github.com/ev2-1/mt-multiserver-proxy.git
