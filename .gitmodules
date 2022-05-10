@@ -13,3 +13,6 @@
 [submodule "multiserver/plugins/chatcommands"]
 	path = multiserver/plugins/chatcommands
 	url = https://github.com/HimbeerserverDE/mt-multiserver-chatcommands
+[submodule "multiserver/plugins/chatcommands-plus"]
+	path = multiserver/plugins/chatcommands-plus
+	url = https://github.com/ev2-1/mt-multiserver-chatcommands-plus
