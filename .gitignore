@@ -7,3 +7,5 @@ config/*
 
 worlds/*
 !worlds/.gitkeep
+
+multiserver/config.json
