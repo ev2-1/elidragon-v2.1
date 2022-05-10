@@ -4,6 +4,7 @@ games/*
 
 config/*
 !config/conf
+!config/hub.signs
 
 worlds/*
 !worlds/.gitkeep

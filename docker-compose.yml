@@ -29,7 +29,7 @@ services:
      - ./games/micl2_hub:/minetest/games/game
      - ./worlds/ev2c:/minetest/world
      - ./config/conf:/config/config.yml
-     - ./signs_hub:/minetest/signs
+     - ./config/hub.signs:/minetest/signs
 
 
  minetest_hub_02:
@@ -38,4 +38,4 @@ services:
      - ./games/micl2_hub:/minetest/games/game
      - ./worlds/ev2c_2:/minetest/world
      - ./config/conf:/config/config.yml
-     - ./signs_hub:/minetest/signs
+     - ./config/hub.signs:/minetest/signs
