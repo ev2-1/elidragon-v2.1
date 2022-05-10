@@ -1,0 +1,41 @@
+version: "3" # ev2_1
+
+services:
+ instancer:
+   build: ./minetest_instancer
+   volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - ./worlds:/mount/worlds
+   ports:
+    - "8888:8888/tcp"
+    - "8889:8889/tcp"
+    #- "8000:80/tcp" internal only!
+
+ multiserver:
+   build: ./multiserver
+   volumes:
+     - ./auth:/go/proxy/cmd/mt-multiserver-proxy/auth
+   depends_on:
+     - instancer
+   links:
+     - minetest_hub_01
+   ports:
+     - "40010:40010/tcp"
+     - "40000:40000/udp"
+
+ minetest_hub_01:
+   build: ./minetest
+   volumes:
+     - ./games/micl2_hub:/minetest/games/game
+     - ./worlds/ev2c:/minetest/world
+     - ./config/conf:/config/config.yml
+     - ./signs_hub:/minetest/signs
+
+
+ minetest_hub_02:
+   build: ./minetest
+   volumes:
+     - ./games/micl2_hub:/minetest/games/game
+     - ./worlds/ev2c_2:/minetest/world
+     - ./config/conf:/config/config.yml
+     - ./signs_hub:/minetest/signs
