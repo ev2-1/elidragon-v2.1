@@ -1,13 +1,12 @@
 {
 	"TelnetAddr": "[::]:40010",
 
-	"Servers": [
-		{
-			"Name": "hub",
+	"Servers": {
+		"hub": {
 			"Addr": "minetest_hub_01:30000",
 			"MediaPool": "micl2"
 		}
-	],
+	},
 	"FallbackServers": [
 		"hub"
 	],
