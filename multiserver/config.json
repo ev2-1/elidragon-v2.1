@@ -1,0 +1,23 @@
+{
+	"TelnetAddr": "[::]:40010",
+
+	"Servers": {
+		"hub": {
+			"Addr": "minetest_hub_01:30000",
+			"MediaPool": "micl2"
+		},
+		"hub_331": {
+			"Addr": "minetest_hub_02:30000",
+			"MediaPool": "micl2"
+		}
+	},
+	"FallbackServers": [
+		"hub"
+	],
+	"Groups": {
+		"default": [
+			"default"
+		]
+	},
+	"ForceDefaultSrv": true
+}

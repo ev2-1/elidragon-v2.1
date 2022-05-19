@@ -9,4 +9,4 @@ config/*
 worlds/*
 !worlds/.gitkeep
 
-multiserver/config.json
+#multiserver/config.json
