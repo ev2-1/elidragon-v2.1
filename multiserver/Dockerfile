@@ -10,10 +10,12 @@ RUN go build .
 
 # plugins:
 COPY plugins /go/plugin_src
+COPY libs /go/libs
 COPY plugin_installer.sh /go/plugin_installer.sh
 RUN sh /go/plugin_installer.sh
 
 COPY ./config.json /go/proxy/cmd/mt-multiserver-proxy/config.json
+COPY ./characters.txt /go/proxy/cmd/mt-multiserver-proxy/characters.txt
 
 EXPOSE 40000/udp
 EXPOSE 40010

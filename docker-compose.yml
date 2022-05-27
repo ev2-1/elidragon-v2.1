@@ -26,16 +26,21 @@ services:
  minetest_hub_01:
    build: ./minetest
    volumes:
-     - ./games/micl2_hub:/minetest/games/game
-     - ./worlds/ev2c:/minetest/world
+     - ./games/micl2:/minetest/games/game
+     - ./worlds/hub:/minetest/world
      - ./config/conf:/config/config.yml
-     - ./config/hub.signs:/minetest/signs
 
-
- minetest_hub_02:
+ mt_2:
    build: ./minetest
    volumes:
-     - ./games/micl2_hub:/minetest/games/game
-     - ./worlds/ev2c_2:/minetest/world
+     - ./games/micl2:/minetest/games/game
+     - ./worlds/mt_2:/minetest/world
      - ./config/conf:/config/config.yml
-     - ./config/hub.signs:/minetest/signs
+
+# minetest_hub_02:
+#   build: ./minetest
+#   volumes:
+#     - ./games/micl2_hub:/minetest/games/game
+#     - ./worlds/ev2c_2:/minetest/world
+#     - ./config/conf:/config/config.yml
+#     - ./config/hub.signs:/minetest/signs

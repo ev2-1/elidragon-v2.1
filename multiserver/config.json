@@ -6,8 +6,8 @@
 			"Addr": "minetest_hub_01:30000",
 			"MediaPool": "micl2"
 		},
-		"hub_331": {
-			"Addr": "minetest_hub_02:30000",
+		"otherserver": {
+			"Addr": "mt_2:30000",
 			"MediaPool": "micl2"
 		}
 	},
@@ -16,7 +16,8 @@
 	],
 	"Groups": {
 		"default": [
-			"default"
+			"default",
+			"fallback"
 		]
 	},
 	"ForceDefaultSrv": true
