@@ -1,4 +1,4 @@
- FROM golang:1.17.9-stretch as builder
+ FROM golang:1.18.1-stretch as builder
 
 COPY proxy /go/proxy
 WORKDIR /go/proxy
@@ -6,7 +6,7 @@ WORKDIR /go/proxy
 RUN go build .
 
 WORKDIR /go/proxy/cmd/mt-multiserver-proxy
-RUN go build .
+RUN go build -buildvcs=false .
 
 # plugins:
 COPY plugins /go/plugin_src

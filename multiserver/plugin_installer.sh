@@ -6,7 +6,7 @@ for folder in $(ls /go/plugin_src/)
 do
 	echo building $folder
 	cd /go/plugin_src/$folder
-	go build -buildmode=plugin
+	go build -buildmode=plugin -buildvcs=false
 	cp *.so /go/proxy/cmd/mt-multiserver-proxy/plugins/
 done
 
