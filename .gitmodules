@@ -16,6 +16,8 @@
 [submodule "multiserver/proxy"]
 	path = multiserver/proxy
 	url = https://github.com/ev2-1/mt-multiserver-proxy.git
+	branch = ev2-1-dev
 [submodule "multiserver/plugins/signs"]
 	path = multiserver/plugins/signs
 	url = https://github.com/ev2-1/solid-signs-chainsaw
+	
