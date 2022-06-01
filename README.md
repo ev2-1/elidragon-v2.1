@@ -8,11 +8,11 @@ well idk....
 
 - most of the repos in https://github.com/ev2-1
 
-- **DOES** use (and need) a custom fork of mt-multiserver-proxy (also has different (more better) API)
+- a custom fork of mt-multiserver-proxy (which has a different, better, API)
 
-- A lot of telnet connections
+- a lot of telnet connections
 
-### how to start:
+### How to start:
 
 - `git submodule update --init`
 
