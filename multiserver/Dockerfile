@@ -14,9 +14,11 @@ COPY libs /go/libs
 COPY plugin_installer.sh /go/plugin_installer.sh
 RUN sh /go/plugin_installer.sh
 
+COPY ./p.l /go/proxy/cmd/mt-multiserver-proxy/p.l
 COPY ./config.json /go/proxy/cmd/mt-multiserver-proxy/config.json
 
 EXPOSE 40000/udp
 EXPOSE 40010
 
+#CMD ["sleep", "9999999999999999"]
 CMD [ "/go/proxy/cmd/mt-multiserver-proxy/mt-multiserver-proxy"]
