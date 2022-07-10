@@ -29,8 +29,8 @@ services:
      - ./games/micl2:/minetest/games/game
      - ./worlds/hub:/minetest/world
      - ./config/conf:/config/config.yml
-   ports:
-    - "30000:30000/udp"
+#   ports:
+#    - "30000:30000/udp"
 
  mt_2:
    build: ./minetest
