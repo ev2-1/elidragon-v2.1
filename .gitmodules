@@ -21,3 +21,6 @@
 	path = multiserver/plugins/signs
 	url = https://github.com/ev2-1/solid-signs-chainsaw
 	
+[submodule "minetest-go/minetest-go"]
+	path = minetest-go/minetest-go
+	url = https://github.com/ev2-1/minetest-go
